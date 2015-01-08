@@ -619,7 +619,7 @@ border-radius: 4px;
 </div>
 
 <script>
-$(document).on("ready", function(){
+angular.element(document).ready(function () {
     $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();
         $(this).siblings('a.active').removeClass("active");
