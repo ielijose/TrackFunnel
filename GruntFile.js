@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+/*module.exports = function(grunt) {
 	var gtx = require('gruntfile-gtx').wrap(grunt);
 
     gtx.loadAuto();
@@ -21,4 +21,33 @@ module.exports = function(grunt) {
     gtx.alias('prerelease', ['bump-only:prerelease', 'release']);
 
     gtx.finalise();
-}
+}*/
+
+
+module.exports = function (grunt) {
+
+  grunt.initConfig({
+    connect: {
+      server: {
+        options: {
+          port: 9000,
+          base: 'src/'
+        }
+      }
+    },
+    watch: {
+      project: {
+        files: ['src/**/*.js', 'src/**/*.html', 'src/**/*.json'],
+        options: {
+          livereload: true
+        }
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+
+  grunt.registerTask('default', ['connect', 'watch']);
+
+};
