@@ -1,0 +1,633 @@
+<style>
+  
+
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+  min-height: 88px;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #009ada;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #009ada;
+  background-image: #009ada;
+  color: #ffffff;
+
+}
+
+div.bhoechie-tab-menu div.list-group>a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+div.bhoechie-tab-menu div.list-group>a img{
+    max-width: 64px;
+    float: left;
+}
+
+div.bhoechie-tab-menu div.list-group>a.active{
+    color: #fff !important;
+    font-weight: bold;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #009ada;
+}
+
+div.bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+
+/* OTROS */
+.jumbotron{
+    padding: 10px 30px 15px !important;
+}
+.funnelCreatBlurbVideo h2 {
+font-weight: bold;
+}
+.funnelCreatBlurbVideo p {
+font-size: 16px;
+line-height: 21px;
+color: rgba(70,75,78,0.8);
+}
+
+.fcprTitle {
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+color: #545454;
+border-bottom: 2px solid #EDEFF0;
+padding-bottom: 20px;
+margin-bottom: 20px;
+}
+
+.funnelCreatePreview h4 {
+font-size: 16px;
+border-bottom: 2px solid #EDEFF0;
+margin-bottom: 20px;
+padding-bottom: 20px;
+padding-top: 20px;
+font-weight: bold !important;
+text-transform: uppercase;
+color: #545454;
+}
+.funnelCreatePreview {
+margin: 0px 5px;
+border-bottom: 2px solid #EDEFF0;
+}
+.funnelCreatePerfectFors {
+margin: 0px 5px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.fcprSubTitle {
+font-size: 18px;
+padding-bottom: 3px;
+margin-bottom: 3px;
+font-weight: bold;
+}
+
+.fcprSubTitle i {
+margin-right: 5px;
+color: #03AE78;
+}
+
+.createFunnelNow {
+background-color: #03AE78;
+color: #FFF;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 16px;
+padding: 15px 25px;
+display: inline-block;
+border-radius: 4px;
+}
+
+/* */
+
+</style>
+
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">Create Funnel</h1>
+</div>
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+      <div class="list-group">
+        <a href="javascript:void(0)" class="list-group-item active text-center"> <img alt="Mail" src="https://assets2.clickfunnels.com/images/createfunnels/mail.png"/>
+          <br/>Optin Lead Capture Funnel
+        </a>
+
+        <a href="javascript:void(0)" class="list-group-item text-center">
+          <img alt="Sales" src="https://assets1.clickfunnels.com/images/createfunnels/sales.png">
+          <br/>Sales Funnel
+        </a>
+
+        <a href="javascript:void(0)" class="list-group-item text-center">
+          <img alt="Webinar" src="https://assets3.clickfunnels.com/images/createfunnels/webinar.png">
+          <br/>Webinar Funnel
+        </a>
+
+        <a href="javascript:void(0)" class="list-group-item text-center">
+          <img alt="Autowebinar" src="https://assets0.clickfunnels.com/images/createfunnels/autowebinar.png">
+          <br/>Auto Webinar Funnel
+        </a>
+
+        <a href="javascript:void(0)" class="list-group-item text-center">
+          <img alt="Membership" src="https://assets3.clickfunnels.com/images/createfunnels/membership.png">
+          <br/>Membership Funnel
+        </a>
+
+        <a href="javascript:void(0)" class="list-group-item text-center">
+          <img alt="Launch" src="https://assets1.clickfunnels.com/images/createfunnels/launch.png">
+          <br/>Launch Funnel
+        </a>
+
+        <a href="javascript:void(0)" class="list-group-item text-center">
+          <img alt="Custom" src="https://assets1.clickfunnels.com/images/createfunnels/custom.png">
+          <br/>Custom Funnel
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+      <!-- optin section -->
+      <div class="bhoechie-tab-content active">
+        <div class="funnelStepExplainer funnelCreate_optin" style="display: block;">
+          <div class="funnelCreatBlurbVideo clearfix funnelCreate_optin">
+            <div class="jumbotron">
+              <h2>
+                Optin Lead Capture Funnel
+              </h2>
+              <p>
+                The best way to convert website traffic into leads is to send them through a page that's usually called a lead, optin, or squeeze page. While people often use different names to describe this page, the goal for all of them is the same: offer an ethical bribe in exchange for someone giving you their email address. That's the core of the optin funnel.
+              </p>
+              <a class="btn btn-success" href="/funnels/new?funnel_template_id=1">
+                <i class="fa fa-plus"></i>
+                Create Funnel
+              </a>
+            </div>
+
+          </div>
+
+          <div class="funnelCreatePreview">
+            <div class="fcprTitle">
+              Funnel Preview
+            </div>
+            <img alt="Squeezeflow" src="https://assets2.clickfunnels.com/assets/funnel_types/squeezeflow-8326f6b8265d942afbcf6c8a12ca08de.png" style="width: 350px;">
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sales section -->
+      <div class="bhoechie-tab-content">
+        <div class="funnelStepExplainer funnelCreate_sales" style="">
+          <div class="funnelCreatBlurbVideo clearfix">
+            <div class="jumbotron">
+              <h2>
+                Sales Funnel
+              </h2>
+              <p>
+                So, you've got something to sell online? If so, then you're probably going to need one of our proven sales funnels. ClickFunnels already integrates with your favorite payment providers, so now all you have to do is setup each page in your sales funnel. It typically consists of deliver your sales message, providing a clear call to action, and funneling your visitors to your order form.
+              </p>
+              <a class="btn btn-success disabled" href="/k/users/177041/subscriptions/57581/edit">
+                <i class="fa fa-plus"></i>
+                Upgrade Required
+              </a>
+            </div>
+
+          </div>
+          <div class="funnelCreatePreview">
+            <div class="fcprTitle">
+              Funnel Preview
+            </div>
+            <img alt="Sales funnel" src="https://assets0.clickfunnels.com/assets/funnel_types/sales-funnel-d33e578032e2d12c1bdbfa6b648da1b8.png" style="width: 815px;">
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- webinar section -->
+      <div class="bhoechie-tab-content">
+        <div class="funnelStepExplainer funnelCreate_webinar" style="">
+          <div class="funnelCreatBlurbVideo clearfix">
+            <div class="jumbotron">
+              <h2>
+                Webinar Funnel
+              </h2>
+              <p>
+                Would you like to do a live webinar, but you aren't happy with the look and feel of your webinar providers registration and confirmation pages? If so, then you are going to love our webinar funnels! They will allow you to bypass the pages that your webinar provider gives you and custom design them to look and feel exactly how you want.
+              </p>
+              <a class="btn btn-success disabled" href="/k/users/177041/subscriptions/57581/edit">
+                <i class="fa fa-plus"></i>
+                Upgrade Required
+              </a>
+            </div>                                
+          </div>
+          <div class="funnelCreatePreview">
+            <div class="fcprTitle">
+              Funnel Preview
+            </div>
+            <img alt="Webinar funnel" src="https://assets0.clickfunnels.com/assets/funnel_types/webinar-funnel-3a0409f169ff26732fd3622d5d8444b3.png" style="width: 590px;">
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- auto webinar section -->
+      <div class="bhoechie-tab-content">
+        <div class="funnelStepExplainer funnelCreate_autowebinar" style="">
+          <div class="funnelCreatBlurbVideo clearfix">
+            <div class="jumbotron">
+              <h2>
+                Auto Webinar Funnel
+              </h2>
+              <p>
+                Do you have a webinar that's producing results, but you don't want to keep doing live presentations every night? If so, then you're going to love our automated webinar funnel! It allows you to take your recorded webinar presentation and create an experience for your webinar attendees that is very similar to your live webinars. There's even a complete email followup system built in to the funnel. You can remind the subscriber of of the webinar date or even trigger email sequences based on their attendance (or lack thereof).
+              </p>
+              <a class="btn btn-success disabled" href="/k/users/177041/subscriptions/57581/edit">
+                <i class="fa fa-plus"></i>
+                Upgrade Required
+              </a>
+            </div>                               
+          </div>
+          <div class="funnelCreatePreview">
+            <div class="fcprTitle">
+              Funnel Preview
+            </div>
+            <img alt="Auto webinar funnel" src="https://assets3.clickfunnels.com/assets/funnel_types/auto-webinar-funnel-26ad035c0dc99b6b4471f21f7f827b59.png" style="width: 815px;">
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- membership section -->
+      <div class="bhoechie-tab-content">
+        <div class="funnelStepExplainer funnelCreate_membership" style="">
+          <div class="funnelCreatBlurbVideo clearfix">
+            <div class="jumbotron">
+              <h2>
+                Membership Funnel
+              </h2>
+              <p>
+                So, technically a membership site isn't actually a funnel, it's a way to deliver your content to people in a fun and unique way. Our membership funnels allow you to lock certain areas of your members area, based on what your customers purchased, drip content to them based on when they signed up, and a whole lot more.
+              </p>
+              <a class="btn btn-success disabled" href="/k/users/177041/subscriptions/57581/edit">
+                <i class="fa fa-plus"></i>
+                Upgrade Required
+              </a>
+            </div>                               
+          </div>
+          <div class="funnelCreatePreview">
+            <div class="fcprTitle">
+              Funnel Preview
+            </div>
+            <img alt="Membership funnel" src="https://assets1.clickfunnels.com/assets/funnel_types/membership-funnel-4af8d8ce0d2dc03ce86979ef935b927c.png" style="width: 350px;">
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- launch section -->
+      <div class="bhoechie-tab-content">
+        <div class="funnelStepExplainer funnelCreate_launch" style="">
+          <div class="funnelCreatBlurbVideo clearfix">
+            <div class="jumbotron">
+              <h2>
+                Launch Funnel
+              </h2>
+              <p>
+                So, you have a new product to launch? The launch funnel was designed after years of testing different ways to launch a new product, and it's been proven to work in hundreds of different markets. It works by building up anticipation for your new product through multiple free videos, and then opening your cart to offer your new product on "launch day".
+              </p>
+              <a class="btn btn-success disabled" href="/k/users/177041/subscriptions/57581/edit">
+                <i class="fa fa-plus"></i>
+                Upgrade Required
+              </a>
+            </div>                                
+          </div>
+          <div class="funnelCreatePreview">
+            <div class="fcprTitle">
+              Funnel Preview
+            </div>
+            <img alt="Launch funnel" src="https://assets1.clickfunnels.com/assets/funnel_types/launch-funnel-9bb9aea76c2448b4ecb9307a7008da63.png" style="width: 850px;">
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- custom section -->
+      <div class="bhoechie-tab-content">
+        <div class="funnelStepExplainer funnelCreate_custom" style="">
+          <div class="funnelCreatBlurbVideo clearfix">
+            <div class="jumbotron">
+              <h2>
+                Custom Funnel
+              </h2>
+              <p>
+                So, you have an idea for a funnel, and you want to build it out without any restrictions? If so, then our custom funnel is for you. You can literally build out any type of funnel you can dream of. Pick a sales letter template, add an upsell or two, create a downsell, add an automated webinar, a membership site, or more.
+              </p>
+              <a class="btn btn-success disabled" href="/k/users/177041/subscriptions/57581/edit">
+                <i class="fa fa-plus"></i>
+                Upgrade Required
+              </a>
+            </div>
+          </div>
+          <div class="funnelCreatePerfectFors">
+            <div class="fcprTitle">
+              This funnel is perfect for...
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Building Buzz
+                </div>
+                <div class="fcprSubText">
+                  buiding buzz for a new product that is in development, the best beta sign up process...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Free Consulting Calls
+                </div>
+                <div class="fcprSubText">
+                  gain new leads for your local business, give away coupons and special local offers...
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fcprSubTitle">
+                  <i class="fa fa-check"></i>
+                  Giving Away Free Reports
+                </div>
+                <div class="fcprSubText">
+                  show your stuff and how awesome you are by giving away free reports in your niche...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).on("ready", function(){
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+
+    });
+});
+</script>

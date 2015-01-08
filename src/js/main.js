@@ -12,7 +12,7 @@ angular.module('app')
 
       // config
       $scope.app = {
-        name: 'Angulr',
+        name: 'Trackfunnel',
         version: '2.0.0',
         // for chart colors
         color: {
@@ -26,14 +26,14 @@ angular.module('app')
           black:   '#1c2b36'
         },
         settings: {
-          themeID: 1,
-          navbarHeaderColor: 'bg-black',
-          navbarCollapseColor: 'bg-white-only',
-          asideColor: 'bg-black',
+          themeID: 10,
+          navbarHeaderColor: 'bg-info dker',
+          navbarCollapseColor: 'bg-info dker',
+          asideColor: 'bg-dark dker b-r',
           headerFixed: true,
           asideFixed: false,
           asideFolded: false,
-          asideDock: false,
+          asideDock: true,
           container: false
         }
       }

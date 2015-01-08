@@ -18,6 +18,8 @@
     "HEADER" : "Navigation",
     "DASHBOARD" : "Dashboard",
     "CALENDAR" : "Calendar",
+    "FUNNELS" : "My Funnels",
+    "CREATE_FUNNEL" : "Create Funnel",
     "EMAIL" : "Email",
     "WIDGETS" : "Widgets",
     "components" : {

@@ -4,7 +4,7 @@
 		"browser": "Internet Explorer 4.0",
 		"platform": "Win 95+",
 		"version": "4",
-		"grade": "X"
+		"grade": "<a href='#/app/create' class='btn btn-success'> Hola </a>"
 	},
 	{
 		"engine": "Trident",

@@ -17,13 +17,24 @@ angular.module('app')
       function ($stateProvider,   $urlRouterProvider) {
           
           $urlRouterProvider
-              .otherwise('/app/dashboard-v1');
+              .otherwise('/app/funnels');
           $stateProvider
               .state('app', {
                   abstract: true,
                   url: '/app',
                   templateUrl: 'tpl/app.html'
               })
+              /* Trackfunnel routes */
+              .state('app.funnels', {
+                  url: '/funnels',
+                  templateUrl: 'tpl/funnels.html'                  
+              })
+
+              .state('app.create', {
+                  url: '/create',
+                  templateUrl: 'tpl/create.html'
+              })
+              /* :Trackfunnel Routes */
               .state('app.dashboard-v1', {
                   url: '/dashboard-v1',
                   templateUrl: 'tpl/app_dashboard_v1.html',
