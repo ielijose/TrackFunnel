@@ -1,7 +1,6 @@
 'use strict';
 
-
-angular.module('app', [
+var app = angular.module('app', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -13,6 +12,12 @@ angular.module('app', [
     'ui.utils',
     'ui.load',
     'ui.jq',
+    'ui.validate',
     'oc.lazyLoad',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
 ]);
+
+app.constant('ngAuthSettings', {
+    apiServiceBaseUri: 'http://localhost:8000/api/',
+    clientId: 'ngAuthApp'
+});

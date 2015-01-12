@@ -10,10 +10,7 @@ div.bhoechie-tab-container{
   -moz-border-radius: 4px;
   border:1px solid #ddd;
   margin-top: 20px;
-  margin-left: 0px;
-  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  margin-left: 0px;  
   background-clip: padding-box;
   opacity: 0.97;
   filter: alpha(opacity=97);
@@ -25,8 +22,6 @@ div.bhoechie-tab-menu{
 }
 div.bhoechie-tab-menu div.list-group{
   margin-bottom: 0;
-  margin-left: 10px;
-
 }
 div.bhoechie-tab-menu div.list-group>a{
   margin-bottom: 0;
@@ -163,7 +158,7 @@ border-radius: 4px;
 <div class="bg-light lter b-b wrapper-md">
   <h1 class="m-n font-thin h3">Create Funnel</h1>
 </div>
-<div class="row">
+<div class="row" ng-controller="CreateFunnelCtrl">
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container">
     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
       <div class="list-group">
@@ -214,7 +209,7 @@ border-radius: 4px;
               <p>
                 The best way to convert website traffic into leads is to send them through a page that's usually called a lead, optin, or squeeze page. While people often use different names to describe this page, the goal for all of them is the same: offer an ethical bribe in exchange for someone giving you their email address. That's the core of the optin funnel.
               </p>
-              <a class="btn btn-success" href="/funnels/new?funnel_template_id=1">
+              <a class="btn btn-success" href="javascript:void()" ng-click="open()">
                 <i class="fa fa-plus"></i>
                 Create Funnel
               </a>
@@ -619,6 +614,10 @@ border-radius: 4px;
   </div>
 </div>
 
+
+<script type="text/ng-template" id="myModalContent.html">
+<div ng-include="'tpl/partials/optin-funnel-wizard.html'"></div>
+</script>
 <script>
 angular.element(document).ready(function () {
     $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {

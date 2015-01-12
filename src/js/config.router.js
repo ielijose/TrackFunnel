@@ -32,8 +32,15 @@ angular.module('app')
 
               .state('app.create', {
                   url: '/create',
-                  templateUrl: 'tpl/create.html'
+                  templateUrl: 'tpl/create.html',
+                  resolve: {
+                    deps: ['$ocLazyLoad',
+                      function( $ocLazyLoad ){
+                        return $ocLazyLoad.load(['js/controllers/create-funnel.js']);
+                    }]
+                  }
               })
+              
               /* :Trackfunnel Routes */
               .state('app.dashboard-v1', {
                   url: '/dashboard-v1',
